@@ -9,6 +9,9 @@
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-satoshi), sans-serif;
+  --font-test-satoshi: var(--font-satoshi), sans-serif;
+  --font-test-inter: var(--font-inter), sans-serif;
+  --font-test-montserrat: var(--font-montserrat), sans-serif;
 }
 
 @media (prefers-color-scheme: dark) {
