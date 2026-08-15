@@ -2,8 +2,6 @@ export default function Home() {
   const testSection = [
     {
       title: 'Section 1',
-      // label:
-      // 'Swap this for real content once the timing and spacing feel right. This first section usually sets the pace for everything after it, so it is worth spending extra time getting the reveal timing to feel natural here. Swap this for real content once the timing and spacing feel right. This first section usually sets the pace for everything after it, so it is worth spending extra time getting the reveal timing to feel natural here. Swap this for real content once the timing and spacing feel right. This first section usually sets the pace for everything after it, so it is worth spending extra time getting the reveal timing to feel natural here. Swap this for real content once the timing and spacing feel right. This first section usually sets the pace for everything after it, so it is worth spending extra time getting the reveal timing to feel natural here. Swap this for real content once the timing and spacing feel right. This first section usually sets the pace for everything after it, so it is worth spending extra time getting the reveal timing to feel natural here. Swap this for real content once the timing and spacing feel right. This first section usually sets the pace for everything after it, so it is worth spending extra time getting the reveal timing to feel natural her Swap this for real content once the timing and spacing feel right. This first section usually sets the pace for everything after it, so it is worth spending extra time getting the reveal timing to feel natural here. Swap this for real content once the timing and spacing feel right. This first section usually sets the pace for everything after it, so it is worth spending extra time getting the reveal timing to feel natural here. Swap this for real content once the timing and spacing feel right. This first section usually sets the pace for everything after it, so it is worth spending extra time getting the reveal timing to feel natural here.',
       labelEdited:
         'As a front-end engineer, I have a solid understanding of front-end technologies, such as complex functionality, maintaining existing sites, debugging, and improving the user experience. I am also highly motivated and self-directed, with a strong work ethic and a constant desire to learn new skills to further improve my craft.'
     },
@@ -49,8 +47,10 @@ export default function Home() {
             className="w-full py-32 border-t border-zinc-200 dark:border-white/10 first:border-t-0 first:pt-40"
           >
             <h2>{s.title}</h2>
-            <p className="font-test-montserrat text-[15px] leading-loose">{s.label}</p>
-            <p className="font-test-montserrat text-[15px] leading-loose">{s.labelEdited}</p>
+            <p className="font-test-montserrat text-[15px] leading-loose font-medium">{s.label}</p>
+            <p className="font-test-montserrat text-[15px] leading-loose font-medium">
+              {s.labelEdited}
+            </p>
           </section>
         ))}
       </main>
