@@ -38,7 +38,7 @@ No test suite is configured.
 
 ## Design System (locked — see `portfolio-design.md` for full detail)
 
-- Palette: background `#111111`, primary text `#FFFFFF` (sparingly), secondary text `#E8E8E8`, body `#999999`, meta/labels `#555555`, glass fill `rgba(255,255,255,0.04)`, glass border `rgba(255,255,255,0.08)`. No color accent — glass morphism on ~10% of the surface *is* the accent.
+- Palette: background `#111111`, primary text `#FFFFFF` (sparingly), secondary text `#E8E8E8`, body `#999999`, meta/labels `#555555`, glass fill `rgba(255,255,255,0.04)`, glass border `rgba(255,255,255,0.08)`. No color accent — glass morphism on ~10% of the surface _is_ the accent.
 - Body line-height `1.7`; never pure white for large text blocks.
 - Centered container, 1080–1180px.
 - Animate only `opacity`/`transform`; nothing that "calls attention to itself"; always respect `prefers-reduced-motion`.
