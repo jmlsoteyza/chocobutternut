@@ -1,35 +1,6 @@
 import type { Metadata } from 'next';
-import localFont from 'next/font/local';
 import { Inter, Montserrat } from 'next/font/google';
 import './globals.css';
-
-const satoshi = localFont({
-  src: [
-    {
-      path: '../public/font/Satoshi-Regular.otf',
-      weight: '400',
-      style: 'normal'
-    },
-    {
-      path: '../public/font/Satoshi-Medium.otf',
-      weight: '500',
-      style: 'normal'
-    },
-    {
-      path: '../public/font/Satoshi-Bold.otf',
-      weight: '700',
-      style: 'normal'
-    }
-  ],
-  variable: '--font-satoshi',
-  display: 'swap'
-});
-
-const inter = Inter({
-  subsets: ['latin'],
-  variable: '--font-inter',
-  display: 'swap'
-});
 
 const montserrat = Montserrat({
   subsets: ['latin'],
@@ -44,10 +15,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: LayoutProps<'/'>) {
   return (
-    <html
-      lang="en"
-      className={`${satoshi.variable} ${inter.variable} ${montserrat.variable} h-full antialiased`}
-    >
+    <html lang="en" className={` ${montserrat.variable} h-full antialiased`}>
       <body className="min-h-full flex flex-col">{children}</body>
     </html>
   );
