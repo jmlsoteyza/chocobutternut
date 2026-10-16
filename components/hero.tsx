@@ -51,6 +51,10 @@ export default function Hero() {
                 </a>
               ))}
             </div>
+            <span className="inline-flex w-fit self-start items-center gap-2 rounded-full border border-blue-500/20 bg-blue-500/5 px-3 py-1 text-xs text-blue-400">
+              <span className="h-1.5 w-1.5 rounded-full bg-blue-400" />
+              Available for freelance projects
+            </span>
           </div>
         </div>
         <div className="py-10">
@@ -61,13 +65,13 @@ export default function Hero() {
           <div>
             <h3 className="text-2xl font-semibold">Front End Developer</h3>
             <p className="pt-4 text-[#A6A4A4]">
-              I'm a full-stack web developer building websites and backend systems with Laravel
-              React WordPress PostgreSQL with SEO experience from client work. I'm currently leading
-              architecture on a pet identification system using Siamese neural networks and
-              EfficientNetV2B0.
+              I'm a frontend developer building websites and web applications with React, Next.js,
+              and TypeScript. I work across design and development, turning ideas into clean,
+              practical interfaces for businesses and startups. My experience includes client
+              projects, responsive web design, and SEO.
             </p>
           </div>
-          <button className="pt-6">Connect with me</button>
+          <button className="mt-6 bg-white text-black px-4 py-2 rounded-md">Get in touch!</button>
         </div>
       </section>
     </>
