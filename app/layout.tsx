@@ -1,12 +1,11 @@
 import type { Metadata } from 'next';
-import { Montserrat } from 'next/font/google';
+import { Geist } from 'next/font/google';
 import './globals.css';
 import Navbar from '@/components/navbar';
 
-const montserrat = Montserrat({
-  subsets: ['latin'],
-  variable: '--font-montserrat',
-  display: 'swap'
+const geist = Geist({
+  variable: '--font-geist',
+  subsets: ['latin']
 });
 
 export const metadata: Metadata = {
@@ -16,7 +15,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: LayoutProps<'/'>) {
   return (
-    <html lang="en" className={` ${montserrat.variable} h-full antialiased`}>
+    <html lang="en" className={` ${geist.variable} h-full antialiased`}>
       <body className="min-h-full flex flex-col">
         <Navbar />
         {children}

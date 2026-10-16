@@ -1,3 +1,5 @@
+import Hero from '@/components/hero';
+
 export default function Home() {
   const testSection = [
     {
@@ -38,18 +40,21 @@ export default function Home() {
   ];
 
   return (
-    <div className="relative flex flex-col flex-1 items-center justify-center bg-background text-foreground font-sans">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center  sm:items-start">
-        {testSection.map((s, index) => (
-          <section key={index} className="w-full py-32">
-            <h2>{s.title}</h2>
-            <p className="font-test-montserrat text-[15px] leading-loose font-medium">{s.label}</p>
-            <p className="font-test-montserrat text-[15px] leading-loose font-medium">
-              {s.labelEdited}
-            </p>
-          </section>
-        ))}
-      </main>
+    <div className="max-w-3xl flex mx-auto w-full pt-32">
+      <Hero />
     </div>
+    // <div className="relative flex flex-col flex-1 items-center justify-center bg-background text-foreground">
+    //   {/* <main className="flex flex-1 w-full max-w-3xl flex-col items-center  sm:items-start">
+    //     {testSection.map((s, index) => (
+    //       <section key={index} className="w-full py-32">
+    //         <h2>{s.title}</h2>
+    //         <p className="font-test-montserrat text-[15px] leading-loose font-medium">{s.label}</p>
+    //         <p className="font-test-montserrat text-[15px] leading-loose font-medium">
+    //           {s.labelEdited}
+    //         </p>
+    //       </section>
+    //     ))}
+    //   </main> */}
+    // </div>
   );
 }
