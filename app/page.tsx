@@ -38,14 +38,10 @@ export default function Home() {
   ];
 
   return (
-    <div className="relative flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <div className="bg-grid absolute inset-0 pointer-events-none" />
-      <main className="flex flex-1 w-full max-w-4xl flex-col items-center px-16 bg-white dark:bg-black sm:items-start">
+    <div className="relative flex flex-col flex-1 items-center justify-center bg-background text-foreground font-sans">
+      <main className="flex flex-1 w-full max-w-3xl flex-col items-center  sm:items-start">
         {testSection.map((s, index) => (
-          <section
-            key={index}
-            className="w-full py-32 border-t border-zinc-200 dark:border-white/10 first:border-t-0 first:pt-40"
-          >
+          <section key={index} className="w-full py-32">
             <h2>{s.title}</h2>
             <p className="font-test-montserrat text-[15px] leading-loose font-medium">{s.label}</p>
             <p className="font-test-montserrat text-[15px] leading-loose font-medium">

@@ -13,7 +13,7 @@ export default function Navbar() {
 
   return (
     <nav className="sticky top-4 z-50 w-full pt-4">
-      <div className="relative mx-auto flex max-w-4xl items-center justify-between">
+      <div className="relative mx-auto flex max-w-3xl items-center justify-between">
         <a href="#home">
           <Image src="/mylogo2.svg" width={42} height={42} alt="Logo" />
         </a>
