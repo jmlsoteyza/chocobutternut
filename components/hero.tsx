@@ -21,11 +21,11 @@ export default function Hero() {
     <section className="w-full px-10">
       <div className="flex flex-row gap-12">
         {/* Left image */}
-        <div className="flex h-44 w-44 shrink-0 items-center justify-center rounded-xl border border-[#292929]">
+        <div className="flex h-45 w-45 shrink-0 items-center justify-center rounded-xl border border-[#292929]">
           <Image
-            src="/dp-pic.jpg"
-            width={160}
-            height={160}
+            src="/testimage.png"
+            width={165}
+            height={165}
             alt="Profile picture"
             className="rounded-xl object-cover"
           />

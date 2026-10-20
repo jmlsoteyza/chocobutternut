@@ -9,7 +9,7 @@ export default function Navbar() {
   ];
 
   return (
-    <nav className="sticky top-4 z-50 w-full pt-4">
+    <nav className="z-50 w-full pt-4">
       <div className="mx-auto flex max-w-3xl items-center justify-between gap-6 px-10">
         <a href="#home" className="shrink-0">
           <Image src="/mylogo2.svg" width={35} height={35} alt="Logo" />
