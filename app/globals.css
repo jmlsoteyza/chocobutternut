@@ -10,6 +10,9 @@
   --text-navbar: #a6a4a4;
   --text-highlight: #ffffff;
   --text-heading: #f5f5f5;
+
+  /* border */
+  --border-line: #292929;
 }
 
 /* Light theme */
@@ -32,6 +35,8 @@
   --color-text-navbar: var(--text-navbar);
   --color-text-highlight: var(--text-highlight);
   --color-text-heading: var(--text-heading);
+  /* border */
+  --color-border-line: var(--border-line);
 
   --font-geist: var(--font-geist), sans-serif;
 }
