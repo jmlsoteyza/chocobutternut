@@ -7,7 +7,6 @@ export default function Navbar() {
     { label: 'Skills', link: '#skills' },
     { label: 'Blog', link: '#blog' }
   ];
-
   return (
     <nav className="z-50 w-full pt-4">
       <div className="mx-auto flex max-w-3xl items-center justify-between gap-6 px-10">
@@ -22,9 +21,8 @@ export default function Navbar() {
             </a>
           ))}
         </div>
-
         <div className="shrink-0">
-          <Image src="/light.svg" width={25} height={25} alt="Switch theme" />
+          <Image src="/light.svg" width={23} height={23} alt="Switch theme" />
         </div>
       </div>
     </nav>
