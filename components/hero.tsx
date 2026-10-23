@@ -18,10 +18,10 @@ export default function Hero() {
   ];
 
   return (
-    <section className="w-full px-10">
+    <section className="w-full ">
       <div className="flex flex-row gap-12">
         {/* Left image */}
-        <div className="flex h-45 w-45 shrink-0 items-center justify-center rounded-xl border border-[#292929]">
+        <div className="flex h-45 w-45 shrink-0 items-center justify-center rounded-xl border border-[#1F1F20]">
           <Image
             src="/testimage.png"
             width={165}
@@ -69,30 +69,28 @@ export default function Hero() {
         </div>
       </div>
 
-      <div className="py-8">
+      <div className="py-6">
         <hr className="border-border-line" />
       </div>
 
       {/* Description */}
-      <div>
+      <div className="w-full">
         <div>
-          <h3 className="text-xl font-semibold text-text-heading">Frontend developer</h3>
-
-          <p className="max-w-lg pt-4 text-text-primary">
-            I build websites and web apps with React, Next.js, and TypeScript, covering design,
-            development, and SEO.
+          <p className="text-text-primary">
+            Hey, I'm Jom. I'm a frontend engineer and I build modern websites and web apps with
+            React, Next.js, Tailwind CSS, and Supabase, with clean design and SEO built in.
           </p>
         </div>
 
-        <div className="mt-6 flex items-center gap-3">
+        <div className="mt-4 flex items-center gap-3">
           <a
             href="#projects"
-            className="rounded-md bg-text-highlight px-4 py-2 text-background transition-colors hover:opacity-90"
+            className="rounded-md bg-text-highlight px-4 py-2 text-background transition-colors hover:opacity-90 text-semibold"
           >
             View projects
           </a>
 
-          <button className="rounded-md border border-[#3A3A3A] px-4 py-2 text-text-highlight transition-colors hover:bg-text-highlight/5">
+          <button className="rounded-md border border-[#3A3A3A] px-4 py-2 text-text-highlight transition-colors hover:bg-text-highlight/5 ">
             Get in touch
           </button>
         </div>
