@@ -8,7 +8,7 @@ export default function Navbar() {
     { label: 'Blog', link: '#blog' }
   ];
   return (
-    <nav className="z-50 w-full border-b border-border-line">
+    <nav className="border-border-line z-50 w-full border-b">
       <div className="mx-auto flex max-w-3xl items-center justify-between gap-6 px-10 py-3.5">
         <a href="#home" className="shrink-0">
           <Image src="/mylogo2.svg" width={35} height={35} alt="Logo" />
