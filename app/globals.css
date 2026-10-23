@@ -3,16 +3,16 @@
 /* Dark theme (default) */
 :root {
   color-scheme: dark;
-  --background: #08080A;
+  --background: #08080a;
   /* Text colors */
   --text-small: #828282;
   --text-primary: #a3a3ac;
   --text-navbar: #a6a4a4;
-  --text-highlight: #EDEDEF;
-  --text-heading: #EDEDEF;
+  --text-highlight: #ededef;
+  --text-heading: #ededef;
 
   /* border */
-  --border-line: #292929;
+  --border-line: #1F1F20;
 }
 
 /* Light theme */
