@@ -3,13 +3,13 @@
 /* Dark theme (default) */
 :root {
   color-scheme: dark;
-  --background: #111111;
+  --background: #08080A;
   /* Text colors */
   --text-small: #828282;
-  --text-primary: #a3a3a3;
+  --text-primary: #a3a3ac;
   --text-navbar: #a6a4a4;
-  --text-highlight: #ffffff;
-  --text-heading: #f5f5f5;
+  --text-highlight: #EDEDEF;
+  --text-heading: #EDEDEF;
 
   /* border */
   --border-line: #292929;
