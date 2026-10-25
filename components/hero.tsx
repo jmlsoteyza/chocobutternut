@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { ArrowUpRight } from 'lucide-react';
+import { ArrowRight, ArrowUpRight, ChevronRight } from 'lucide-react';
 
 export default function Hero() {
   const texticons = [
@@ -81,14 +81,17 @@ export default function Hero() {
       <div className="w-full py-6">
         <div className="inline-flex flex-col gap-4 pr-6">
           <p className="text-text-primary pr-4 leading-relaxed tracking-[-0.2px]">
-            Sup, I’m Jom! A{' '}
+            Sup, I’m Jom! a{' '}
             <span className="text-text-highlight">frontend engineer</span> who
             enjoys building great websites and web apps, with a care for{' '}
             <span className="text-text-highlight">craftsmanship</span> and the
             quality of my work. I usually focus on{' '}
             <span className="text-text-highlight">system design first</span>,
-            then translate those architectural decisions into{' '}
-            <span className="text-text-highlight">clean code</span>.
+            then{' '}
+            <span className="text-text-highlight">
+              translate those architectural decisions into clean code
+            </span>
+            .
           </p>
 
           <p className="text-text-primary pr-4 leading-relaxed tracking-[-0.2px]">
@@ -107,18 +110,20 @@ export default function Hero() {
             friends.
           </p>
         </div>
-        <div className="mt-4 flex items-center gap-3">
-          <a
-            href="#projects"
-            className="bg-text-highlight text-background text-semibold rounded-md px-4 py-2 transition-colors hover:opacity-90"
-          >
-            See my works{' '}
-          </a>
-
-          <button className="text-text-highlight hover:bg-text-highlight/5 rounded-md border border-[#3A3A3A] px-4 py-2 transition-colors">
-            Get in touch
-          </button>
-        </div>
+        <a
+          href="#contact"
+          className="group text-text-primary hover:text-text-highlight focus-visible:text-text-highlight mt-6 flex w-fit flex-row items-center gap-1 transition-colors duration-300"
+        >
+          <span className="relative pb-1">
+            Let&apos;s get in touch
+            <span className="bg-border-line absolute inset-x-0 bottom-0 h-px" />
+            <span className="absolute inset-x-0 bottom-0 h-px origin-left scale-x-0 bg-white transition-transform duration-300 group-hover:scale-x-100 group-focus-visible:scale-x-100" />
+          </span>
+          <ChevronRight
+            size={20}
+            className="transition-transform duration-300 group-hover:translate-x-1 group-focus-visible:translate-x-1"
+          />
+        </a>
       </div>
     </section>
   );
