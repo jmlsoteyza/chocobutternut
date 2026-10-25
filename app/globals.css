@@ -1,4 +1,4 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
 /* Dark theme (default) */
 :root {
@@ -8,7 +8,7 @@
   --text-small: #828282;
   --text-primary: #a3a3ac;
   --text-navbar: #a6a4a4;
-  --text-highlight: #ededef;
+  --text-highlight: #fff;
   --text-heading: #ededef;
 
   /* border */

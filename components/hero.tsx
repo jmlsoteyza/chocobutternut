@@ -73,26 +73,46 @@ export default function Hero() {
         </div>
       </div>
 
-      <div className="py-6">
+      {/* <div className="py-6">
         <hr className="border-border-line" />
-      </div>
+      </div> */}
 
       {/* Description */}
-      <div className="w-full">
-        <div>
-          <p className="text-text-primary">
-            Hey, I'm Jom. I'm a frontend engineer and I build modern websites
-            and web apps with React, Next.js, Tailwind CSS, and Supabase, with
-            clean design and SEO built in.
+      <div className="w-full py-6">
+        <div className="inline-flex flex-col gap-4 pr-6">
+          <p className="text-text-primary pr-4 leading-relaxed tracking-[-0.2px]">
+            Sup, I’m Jom! A{' '}
+            <span className="text-text-highlight">frontend engineer</span> who
+            enjoys building great websites and web apps, with a care for{' '}
+            <span className="text-text-highlight">craftsmanship</span> and the
+            quality of my work. I usually focus on{' '}
+            <span className="text-text-highlight">system design first</span>,
+            then translate those architectural decisions into{' '}
+            <span className="text-text-highlight">clean code</span>.
+          </p>
+
+          <p className="text-text-primary pr-4 leading-relaxed tracking-[-0.2px]">
+            As a freelancer, I build interfaces that reflect each client’s
+            vision and the needs of their users. I handle{' '}
+            <span className="text-text-highlight">both design and code</span>,
+            so{' '}
+            <span className="text-text-highlight">
+              what you sign off on is what gets built
+            </span>
+            .
+          </p>
+
+          <p className="text-text-primary leading-relaxed tracking-[-0.2px]">
+            In my downtime, I compete in dota2, running, the gym, and trips with
+            friends.
           </p>
         </div>
-
         <div className="mt-4 flex items-center gap-3">
           <a
             href="#projects"
             className="bg-text-highlight text-background text-semibold rounded-md px-4 py-2 transition-colors hover:opacity-90"
           >
-            View projects
+            See my works{' '}
           </a>
 
           <button className="text-text-highlight hover:bg-text-highlight/5 rounded-md border border-[#3A3A3A] px-4 py-2 transition-colors">
