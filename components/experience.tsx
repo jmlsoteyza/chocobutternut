@@ -71,59 +71,57 @@ const experienceData: ExperienceItem[] = [
 export default function Experience() {
   return (
     <section>
-      <div>
-        <div className="inline-flex w-full flex-col">
-          <div className="pb-4">
-            <span>Experience</span>
-            <h1 className="text-text-highlight text-xl font-medium tracking-tight">
-              What I experienced.
-            </h1>
-          </div>
+      <div className="inline-flex w-full flex-col">
+        <div className="pb-4">
+          <span>Experience</span>
+          <h1 className="text-text-highlight text-xl font-medium tracking-tight">
+            What I experienced.
+          </h1>
+        </div>
 
-          <div className="flex flex-col gap-6">
-            {experienceData.map(
-              ({ id, company, year, role, description, logo, skills }) => (
-                <div
-                  key={id}
-                  className="group relative -mx-5 flex cursor-pointer gap-4 overflow-hidden rounded-xl p-5 text-sm transition duration-300 hover:border-white/20 hover:bg-white/[0.04]"
-                >
-                  <div className="flex size-9.5 shrink-0 items-center justify-center rounded-lg border border-white/10 bg-[#111] transition-colors duration-300 group-hover:border-white/20">
-                    <Image {...logo} />
-                  </div>
-                  <div className="flex w-full flex-col gap-1">
-                    <div className="flex w-full items-start justify-between gap-4">
-                      <div className="flex flex-col">
-                        <div className="inline-flex items-center gap-1">
-                          <h3 className="text-text-highlight text-base font-medium">
-                            {role}
-                          </h3>
-                          <ArrowUpRight
-                            size={16}
-                            strokeWidth={2}
-                            color="white"
-                            className="transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1"
-                          />
-                        </div>
-                        <p>{company}</p>
+        <div className="flex flex-col gap-6">
+          {experienceData.map(
+            ({ id, company, year, role, description, logo, skills }) => (
+              <div
+                key={id}
+                className="group relative -mx-5 flex cursor-pointer gap-4 overflow-hidden rounded-xl p-5 text-sm transition duration-300 hover:border-white/20 hover:bg-white/[0.04]"
+              >
+                <div className="flex size-9.5 shrink-0 items-center justify-center rounded-lg border border-white/10 bg-[#111] transition-colors duration-300 group-hover:border-white/20">
+                  <Image {...logo} />
+                </div>
+                <div className="flex w-full flex-col gap-1">
+                  <div className="flex w-full items-start justify-between gap-4">
+                    <div className="flex flex-col">
+                      <div className="inline-flex items-center gap-1">
+                        <h3 className="text-text-highlight text-base font-medium">
+                          {role}
+                        </h3>
+                        <ArrowUpRight
+                          size={16}
+                          strokeWidth={2}
+                          color="white"
+                          className="transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1"
+                        />
                       </div>
-                      <span className="shrink-0 text-xs">{year}</span>
+                      <p>{company}</p>
                     </div>
-                    <p className="pt-3 leading-relaxed">{description}</p>
-                    <div className="flex flex-row gap-2 pt-2 text-xs">
-                      {skills.map((skill) => (
-                        <span
-                          key={skill}
-                          className="rounded-full border border-white/10 bg-white/5 px-4 py-1 font-medium text-white/80 transition-colors duration-300 group-hover:border-white/20 group-hover:bg-white/10"
-                        >
-                          {skill}
-                        </span>
-                      ))}
-                    </div>
+                    <span className="shrink-0 text-xs">{year}</span>
+                  </div>
+                  <p className="pt-3 leading-relaxed">{description}</p>
+                  <div className="flex flex-row gap-2 pt-2 text-xs">
+                    {skills.map((skill) => (
+                      <span
+                        key={skill}
+                        className="rounded-full border border-white/10 bg-white/5 px-4 py-1 font-medium text-white/80 transition-colors duration-300 group-hover:border-white/20 group-hover:bg-white/10"
+                      >
+                        {skill}
+                      </span>
+                    ))}
                   </div>
                 </div>
-              )
-            )}
-          </div>
+              </div>
+            )
+          )}
         </div>
       </div>
     </section>

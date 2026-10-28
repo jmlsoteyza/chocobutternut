@@ -1,8 +1,13 @@
 import Image from 'next/image';
-import { ArrowRight, ArrowUpRight, ChevronRight } from 'lucide-react';
+import { ArrowUpRight, ChevronRight } from 'lucide-react';
+
+interface TextIconsItems {
+  name: string;
+  link: string;
+}
 
 export default function Hero() {
-  const texticons = [
+  const texticons: TextIconsItems[] = [
     {
       name: 'Github',
       link: 'https://github.com/jmlsoteyza'
@@ -73,10 +78,6 @@ export default function Hero() {
         </div>
       </div>
 
-      {/* <div className="py-6">
-        <hr className="border-border-line" />
-      </div> */}
-
       {/* Description */}
       <div className="w-full py-6">
         <div className="inline-flex flex-col gap-4 pr-6">
@@ -117,10 +118,10 @@ export default function Hero() {
           <span className="relative pb-1">
             Let&apos;s get in touch
             <span className="bg-border-line absolute inset-x-0 bottom-0 h-px" />
-            <span className="absolute inset-x-0 bottom-0 h-px origin-left scale-x-0 bg-white transition-transform duration-300 group-hover:scale-x-100 group-focus-visible:scale-x-100" />
+            <span className="absolute inset-x-0 bottom-0 h-px origin-left scale-x-0 bg-white transition-transform duration-300 group-hover:scale-x-100 group-focus-visible:scale-x-50" />
           </span>
           <ChevronRight
-            size={20}
+            size={19}
             className="transition-transform duration-300 group-hover:translate-x-1 group-focus-visible:translate-x-1"
           />
         </a>
