@@ -20,13 +20,13 @@ export default function Services() {
     },
     {
       number: '03',
-      title: 'Landing Page',
+      title: 'Portfolio websites',
       description:
         'A home for your work, for developers, designers, photographers, and artists.'
     },
     {
       number: '04',
-      title: 'Landing Page',
+      title: 'Website improvements',
       description:
         'Fix layout, speed, mobile, and accessibility on a site you already have. Basic SEO included.'
     }
@@ -45,7 +45,7 @@ export default function Services() {
           {services.map(({ number, title, description }) => (
             <div
               key={number}
-              className="group border-border-line rounded-xl border px-4 py-4"
+              className="group border-border-line rounded-xl border px-4 py-6"
             >
               <div className="flex size-9.5 items-center justify-center rounded-lg border border-white/10 bg-[#111] text-xs font-medium">
                 {number}
