@@ -20,7 +20,7 @@ interface ExperienceItem {
 const experienceData: ExperienceItem[] = [
   {
     id: 1,
-    company: 'TrueRoas',
+    company: 'House Of Inasal',
     year: '2023 - 2024',
     role: 'Fullstack Engineer',
     link: 'trueroas.com',
@@ -36,9 +36,25 @@ const experienceData: ExperienceItem[] = [
   },
   {
     id: 2,
-    company: 'kangkong',
+    company: 'TrueRoas',
     year: '2023 - 2024',
     role: 'Fullstack Engineer',
+    link: 'trueroas.com',
+    description:
+      'Sup, I’m Jom! a frontend engineer who enjoys building great websites and web apps, with a care for craftsmanship and the quality of my work. I usually focus on system design first, then translate those architectural decisions into clean code.',
+    logo: {
+      width: 20,
+      height: 20,
+      src: '/reroas_logo.svg',
+      alt: 'trueroas logo'
+    },
+    skills: ['React', 'NextJS', 'Supabase']
+  },
+  {
+    id: 3,
+    company: 'Anterior',
+    year: '2023 - 2024',
+    role: 'Frontend Engineer Intern',
     link: 'www.com',
     description:
       'Sup, I’m Jom! a frontend engineer who enjoys building great websites and web apps, with a care for craftsmanship and the quality of my work. I usually focus on system design first, then translate those architectural decisions into clean code.',
@@ -56,11 +72,13 @@ export default function Experience() {
   return (
     <section>
       <div>
-        <div className="inline-flex w-full flex-col gap-2">
-          <span>Experience</span>
-          <h1 className="text-text-highlight text-2xl tracking-tight">
-            What I experienced.
-          </h1>
+        <div className="inline-flex w-full flex-col">
+          <div className="pb-4">
+            <span>Experience</span>
+            <h1 className="text-text-highlight text-xl font-medium tracking-tight">
+              What I experienced.
+            </h1>
+          </div>
 
           <div className="flex flex-col gap-6">
             {experienceData.map(
@@ -76,7 +94,7 @@ export default function Experience() {
                     <div className="flex w-full items-start justify-between gap-4">
                       <div className="flex flex-col">
                         <div className="inline-flex items-center gap-1">
-                          <h3 className="text-text-highlight text-base">
+                          <h3 className="text-text-highlight text-base font-medium">
                             {role}
                           </h3>
                           <ArrowUpRight
@@ -91,7 +109,7 @@ export default function Experience() {
                       <span className="shrink-0 text-xs">{year}</span>
                     </div>
                     <p className="pt-3 leading-relaxed">{description}</p>
-                    <div className="flex flex-row gap-4 pt-2 text-xs">
+                    <div className="flex flex-row gap-2 pt-2 text-xs">
                       {skills.map((skill) => (
                         <span
                           key={skill}
