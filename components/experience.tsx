@@ -107,12 +107,14 @@ export default function Experience() {
                     </div>
                     <span className="shrink-0 text-xs">{year}</span>
                   </div>
-                  <p className="pt-3 leading-relaxed">{description}</p>
+                  <p className="pt-3 text-[15px] leading-relaxed">
+                    {description}
+                  </p>
                   <div className="flex flex-row gap-2 pt-2 text-xs">
                     {skills.map((skill) => (
                       <span
                         key={skill}
-                        className="rounded-full border border-white/10 bg-white/5 px-4 py-1 font-medium text-white/80 transition-colors duration-300 group-hover:border-white/20 group-hover:bg-white/10"
+                        className="rounded-full border border-white/10 bg-white/5 px-4 py-1 text-[13px] font-medium text-white/80 transition-colors duration-300 group-hover:border-white/20 group-hover:bg-white/10"
                       >
                         {skill}
                       </span>
