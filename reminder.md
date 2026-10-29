@@ -12,16 +12,16 @@ example: think of toy story, and cars.
 
 The goal: Make the interface feel simple at first glance, with the quality revealed through the details.
 
-* proper form of the eye movement
-* It’s not hard to navigate and not hard to see
-* It highlights important information without being overwhelmed with the designs.
-* KISS method.
-* It’s not hard to navigate and not hard to see
+- proper form of the eye movement
+- It’s not hard to navigate and not hard to see
+- It highlights important information without being overwhelmed with the designs.
+- KISS method.
+- It’s not hard to navigate and not hard to see
 
-- Simplicity - clarity, remove unecessary.
-- Detailed quality - clear spacing, good background, text combination, font-sizes, breathing spaces.
-- it should be trustworthy, emotions, it will looked it will solve your problem
-- A bit unique to others.
-- very very detailed, looking easy to read, looking easy to view, even if not a developer or any other else.
-- Clarity and details → think about toy story, cars and lambo.
-- Quality animations.
+* Simplicity - clarity, remove unecessary.
+* Detailed quality - clear spacing, good background, text combination, font-sizes, breathing spaces.
+* it should be trustworthy, emotions, it will looked it will solve your problem
+* A bit unique to others.
+* very very detailed, looking easy to read, looking easy to view, even if not a developer or any other else.
+* Clarity and details → think about toy story, cars and lambo.
+* Quality animations.
