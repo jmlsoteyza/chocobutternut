@@ -72,7 +72,7 @@ export default function Experience() {
   return (
     <section>
       <div className="inline-flex w-full flex-col">
-        <div className="inline-flex flex-col gap-3.5 pb-4">
+        <div className="inline-flex flex-col gap-2 pb-6">
           <span className="text-[15px]">Experience</span>
           <h1 className="text-text-highlight text-xl font-medium tracking-tight">
             What I experienced.

@@ -27,7 +27,7 @@ export default function Process() {
   return (
     <section>
       <div>
-        <div className="inline-flex flex-col gap-3.5 pb-4">
+        <div className="inline-flex flex-col gap-2 pb-6">
           <span className="text-[15px]">Process</span>
           <h1 className="text-text-highlight text-xl font-medium tracking-tight">
             How working with me goes.
