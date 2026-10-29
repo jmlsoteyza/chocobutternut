@@ -18,10 +18,10 @@ The goal: Make the interface feel simple at first glance, with the quality revea
 - KISS method.
 - It’s not hard to navigate and not hard to see
 
-* Simplicity - clarity, remove unecessary.
-* Detailed quality - clear spacing, good background, text combination, font-sizes, breathing spaces.
-* it should be trustworthy, emotions, it will looked it will solve your problem
-* A bit unique to others.
-* very very detailed, looking easy to read, looking easy to view, even if not a developer or any other else.
-* Clarity and details → think about toy story, cars and lambo.
-* Quality animations.
+- Simplicity - clarity, remove unecessary.
+- Detailed quality - clear spacing, good background, text combination, font-sizes, breathing spaces.
+- it should be trustworthy, emotions, it will looked it will solve your problem
+- A bit unique to others.
+- very very detailed, looking easy to read, looking easy to view, even if not a developer or any other else.
+- Clarity and details → think about toy story, cars and lambo.
+- Quality animations.
