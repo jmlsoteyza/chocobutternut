@@ -2,10 +2,12 @@ import Image from 'next/image';
 
 export default function Navbar() {
   const navbarList = [
-    { label: 'About', link: '#about' },
     { label: 'Projects', link: '#projects' },
     { label: 'Skills', link: '#skills' },
-    { label: 'Blog', link: '#blog' }
+    { label: 'Experience', link: '#experience' },
+    { label: 'Services', link: '#services' }
+
+    // { label: 'Blog', link: '#blog' } soon!
   ];
   return (
     <nav className="border-border-line z-50 w-full border-b">
