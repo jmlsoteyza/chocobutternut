@@ -72,8 +72,8 @@ export default function Experience() {
   return (
     <section>
       <div className="inline-flex w-full flex-col">
-        <div className="pb-4">
-          <span>Experience</span>
+        <div className="inline-flex flex-col gap-3.5 pb-4">
+          <span className="text-[15px]">Experience</span>
           <h1 className="text-text-highlight text-xl font-medium tracking-tight">
             What I experienced.
           </h1>

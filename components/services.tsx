@@ -35,8 +35,8 @@ export default function Services() {
   return (
     <section>
       <div>
-        <div className="pb-4">
-          <span>Services</span>
+        <div className="inline-flex flex-col gap-3.5 pb-4">
+          <span className="text-[15px]">Services</span>
           <h1 className="text-text-highlight text-xl font-medium tracking-tight">
             What I can build for you.
           </h1>
@@ -51,7 +51,7 @@ export default function Services() {
                 {number}
               </div>
               <h2 className="text-text-heading pt-3 font-medium">{title}</h2>
-              <p className="pt-2 text-[15px] tracking-tight">{description}</p>
+              <p className="pt-2 text-[15px] leading-relaxed">{description}</p>
             </div>
           ))}
         </div>
