@@ -107,7 +107,7 @@ export default function Experience() {
                     </div>
                     <span className="shrink-0 text-xs">{year}</span>
                   </div>
-                  <p className="pt-3 text-[15px] leading-relaxed">
+                  <p className="text-text-primary pt-3 text-[15px] leading-relaxed">
                     {description}
                   </p>
                   <div className="flex flex-row gap-2 pt-2 text-xs">
