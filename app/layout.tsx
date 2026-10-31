@@ -1,7 +1,8 @@
 import type { Metadata } from 'next';
 import { Geist } from 'next/font/google';
 import './globals.css';
-import Navbar from '@/components/navbar';
+import Navbar from '@/components/navbar/navbar';
+import { ThemeProvider } from './theme-provider';
 
 const geist = Geist({
   variable: '--font-geist',
@@ -15,10 +16,16 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: LayoutProps<'/'>) {
   return (
-    <html lang="en" className={` ${geist.variable} h-full antialiased`}>
+    <html
+      lang="en"
+      className={` ${geist.variable} h-full antialiased`}
+      suppressHydrationWarning
+    >
       <body className="flex min-h-full flex-col">
-        <Navbar />
-        {children}
+        <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
+          <Navbar />
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   );

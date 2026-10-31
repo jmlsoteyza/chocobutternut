@@ -1,4 +1,7 @@
+'use client';
+
 import Image from 'next/image';
+import ThemeToggle from './theme-toggle';
 
 export default function Navbar() {
   const navbarList = [
@@ -24,7 +27,7 @@ export default function Navbar() {
           ))}
         </div>
         <div className="shrink-0">
-          <Image src="/light.svg" width={23} height={23} alt="Switch theme" />
+          <ThemeToggle />
         </div>
       </div>
     </nav>
