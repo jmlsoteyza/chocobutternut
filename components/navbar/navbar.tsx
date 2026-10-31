@@ -17,14 +17,14 @@ export default function Navbar() {
       <div className="mx-auto flex max-w-3xl items-center justify-between gap-6 px-10 py-3.5">
         <a href="#home" className="relative h-10 w-10 shrink-0">
           <Image
-            className="absolute inset-0 opacity-100 transition-opacity duration-300 dark:opacity-0"
+            className="absolute inset-0 m-auto opacity-100 transition-opacity duration-300 dark:opacity-0"
             src="/darkicon.svg"
             width={35}
             height={35}
             alt="Logo"
           />
           <Image
-            className="absolute inset-0 opacity-0 transition-opacity duration-300 dark:opacity-100"
+            className="absolute inset-0 m-auto opacity-0 transition-opacity duration-300 dark:opacity-100"
             src="/mylogo2.svg"
             width={35}
             height={35}
