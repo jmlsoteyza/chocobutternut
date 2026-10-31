@@ -19,15 +19,15 @@ export default function Navbar() {
           <Image
             className="absolute inset-0 opacity-100 transition-opacity duration-300 dark:opacity-0"
             src="/darkicon.svg"
-            width={40}
-            height={40}
+            width={35}
+            height={35}
             alt="Logo"
           />
           <Image
             className="absolute inset-0 opacity-0 transition-opacity duration-300 dark:opacity-100"
             src="/mylogo2.svg"
-            width={40}
-            height={40}
+            width={35}
+            height={35}
             alt=""
           />
         </a>
