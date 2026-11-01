@@ -114,7 +114,7 @@ export default function Experience() {
                     {skills.map((skill) => (
                       <span
                         key={skill}
-                        className="rounded-full border border-white/10 bg-white/5 px-4 py-1 text-[13px] font-medium text-white/80 transition-colors duration-300 group-hover:border-white/20 group-hover:bg-white/10"
+                        className="border-border-line rounded-full border bg-black px-4 py-1 text-[13px] font-medium text-white/80 transition-colors duration-300 group-hover:text-white"
                       >
                         {skill}
                       </span>
