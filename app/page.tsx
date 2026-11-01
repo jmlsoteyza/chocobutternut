@@ -2,6 +2,7 @@ import Experience from '@/components/experience';
 import Hero from '@/components/hero';
 import Process from '@/components/process';
 import Services from '@/components/services';
+import Stacks from '@/components/stacks';
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       <Experience />
       <Services />
       <Process />
+      <Stacks />
     </main>
   );
 }
