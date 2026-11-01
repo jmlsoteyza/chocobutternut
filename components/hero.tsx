@@ -84,10 +84,13 @@ export default function Hero() {
           <p className="text-text-primary pr-4 leading-relaxed tracking-[-0.2px]">
             Sup, I’m Jom! a{' '}
             <span className="text-text-highlight">frontend engineer</span> who
-            enjoys building great websites and web apps, with a care for{' '}
-            <span className="text-text-highlight">craftsmanship</span> and the
-            quality of my work. I usually focus on{' '}
-            <span className="text-text-highlight">system design first</span>,
+            enjoys building great websites and web apps,
+            <span className="text-text-highlight">
+              {' '}
+              with a care for craftsmanship
+            </span>{' '}
+            and the quality of my work. I usually focus on{' '}
+            <span className="text-text-highlight">system design</span> first,
             then{' '}
             <span className="text-text-highlight">
               translate those architectural decisions into clean code

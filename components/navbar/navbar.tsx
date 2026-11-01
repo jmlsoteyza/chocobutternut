@@ -13,7 +13,7 @@ export default function Navbar() {
     // { label: 'Blog', link: '#blog' } soon!
   ];
   return (
-    <nav className="border-border-line z-50 w-full border-b">
+    <nav className="border-border-line bg-background/70 sticky top-0 z-50 w-full border-b backdrop-blur-md">
       <div className="mx-auto flex max-w-3xl items-center justify-between gap-6 px-10 py-3.5">
         <a href="#home" className="relative h-10 w-10 shrink-0">
           <Image
