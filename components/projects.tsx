@@ -1,4 +1,4 @@
-import { ArrowUpRight } from 'lucide-react';
+import { ArrowUpRight, ChevronRight } from 'lucide-react';
 
 interface ProjectItem {
   id: number;
@@ -39,13 +39,22 @@ const projectItems: ProjectItem[] = [
 export default function Projects() {
   return (
     <section>
-      <div className="inline-flex flex-col gap-2 pb-6">
-        <span className="text-[15px]">Projects</span>
-        <h1 className="text-text-highlight text-xl font-medium tracking-tight">
-          What I built.
-        </h1>
+      <div className="flex flex-row justify-between">
+        <div className="inline-flex flex-col">
+          <span className="text-[15px]">Projects</span>
+          <h1 className="text-text-highlight text-xl font-medium tracking-tight">
+            What I built.
+          </h1>
+        </div>
+        <span className="group hover:text-text-highlight inline-flex cursor-pointer items-center gap-0.5 text-[13px] font-medium tracking-[0.1] transition-colors duration-200">
+          VIEW PROJECTS
+          <ChevronRight
+            size={15.5}
+            className="transition-transform duration-200 group-hover:translate-x-1"
+          />
+        </span>
       </div>
-      <div className="flex flex-col gap-8">
+      <div className="flex flex-col gap-8 pt-6">
         {projectItems.map((project) => (
           <div
             key={project.id}
