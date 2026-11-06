@@ -1,4 +1,5 @@
-import { ArrowUpRight } from 'lucide-react';
+import { ArrowUpRight, ArrowRight, ChevronRight } from 'lucide-react';
+
 import Image from 'next/image';
 
 interface ExperienceItem {
@@ -72,14 +73,22 @@ export default function Experience() {
   return (
     <section>
       <div className="inline-flex w-full flex-col">
-        <div className="inline-flex flex-col gap-2 pb-6">
-          <span className="text-[15px]">Experience</span>
-          <h1 className="text-text-highlight text-xl font-medium tracking-tight">
-            What I experienced.
-          </h1>
+        <div className="flex flex-row justify-between">
+          <div className="inline-flex flex-col">
+            <span className="text-[15px]">Experience</span>
+            <h1 className="text-text-highlight text-xl font-medium tracking-tight">
+              My work history.
+            </h1>
+          </div>
+          <span className="group hover:text-text-highlight inline-flex cursor-pointer items-center gap-0.5 text-[13px] font-medium tracking-[0.1] transition-colors duration-200">
+            VIEW EXPERIENCE
+            <ChevronRight
+              size={15.5}
+              className="transition-transform duration-200 group-hover:translate-x-1"
+            />
+          </span>
         </div>
-
-        <div className="flex flex-col gap-6">
+        <div className="flex flex-col gap-6 pt-6">
           {experienceData.map(
             ({ id, company, year, role, description, logo, skills }) => (
               <div
