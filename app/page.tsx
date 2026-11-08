@@ -1,3 +1,4 @@
+import Certifications from '@/components/certifications';
 import Experience from '@/components/experience';
 import Hero from '@/components/hero';
 import Process from '@/components/process';
@@ -14,6 +15,7 @@ export default function Home() {
       <Services />
       <Process />
       <Stacks />
+      <Certifications />
     </main>
   );
 }
