@@ -1,28 +1,36 @@
 import { ArrowUpRight, ChevronRight } from 'lucide-react';
 import Image from 'next/image';
 
+interface CertificationsItems {
+  id: number;
+  courseTitle: string;
+  schoolTitle: string;
+  link: string;
+  image: string;
+}
+
 export default function Certifications() {
-  const certificationsItems = [
+  const certificationsItems: CertificationsItems[] = [
     {
       id: 1,
       courseTitle: 'Data Structures',
       schoolTitle: 'UC San Diego',
       link: 'https://www.coursera.org/account/accomplishments/verify/60PW1BTFEMC5',
-      image: '/coursera-images/datastructures.webp'
+      image: '/assets/coursera-images/datastructures.webp'
     },
     {
       id: 2,
       courseTitle: 'Introduction to Computer Programming',
       schoolTitle: 'University Of London',
       link: 'https://www.coursera.org/account/accomplishments/verify/MCY7Z8DIZE81',
-      image: ''
+      image: '/assets/coursera-images/datastructures.webp'
     },
     {
       id: 3,
       courseTitle: 'Data Structures',
       schoolTitle: 'UC San Diego',
       link: 'https://www.coursera.org/account/accomplishments/verify/60PW1BTFEMC5',
-      image: ''
+      image: '/assets/coursera-images/datastructures.webp'
     }
   ];
 
@@ -51,31 +59,32 @@ export default function Certifications() {
                 key={id}
                 className="border-border-line relative border-b py-6"
               >
-                <div className="flex gap-6">
+                <div className="flex gap-4">
                   {/* Image - Left */}{' '}
                   <div className="relative h-22 w-32 shrink-0 cursor-pointer overflow-hidden rounded-md">
-                    <Image
-                      src={image || ''}
-                      fill
-                      alt="Certificate"
-                      className="object-fit"
-                      sizes="256px"
-                      quality={90}
-                    />
+                    {image && (
+                      <div className="relative h-22 w-32 shrink-0 overflow-hidden rounded-md">
+                        <Image
+                          src={image}
+                          fill
+                          alt={`${courseTitle} certificate`}
+                          sizes="256px"
+                          className="object-contain"
+                        />
+                      </div>
+                    )}
                   </div>
                   {/* Text - Right */}
                   <div className="inline-flex flex-col">
-                    <h3 className="text-text-heading text-base font-medium">
+                    <h3 className="text-text-heading text-base font-semibold">
                       {courseTitle}
                     </h3>
-                    <span className="text-[15px] font-medium">
-                      {schoolTitle}
-                    </span>
+                    <span className="text-[14.5px]">{schoolTitle}</span>
                     <a
                       className="group text-text-highlight relative inline-flex items-center gap-0.5 self-start pt-4.5 text-[14.5px] transition-colors duration-300"
                       href={link}
                     >
-                      Visit Link
+                      Verify
                       <ArrowUpRight
                         size={14}
                         className="transition-transform duration-200 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
