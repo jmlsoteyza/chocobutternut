@@ -20,17 +20,24 @@ export default function Certifications() {
     },
     {
       id: 2,
-      courseTitle: 'Introduction to Computer Programming',
-      schoolTitle: 'University Of London',
+      courseTitle: 'Programming with JavaScript',
+      schoolTitle: 'Meta',
       link: 'https://www.coursera.org/account/accomplishments/verify/MCY7Z8DIZE81',
-      image: '/assets/coursera-images/datastructures.webp'
+      image: '/assets/coursera-images/programmingjavascript.webp'
     },
     {
       id: 3,
-      courseTitle: 'Data Structures',
-      schoolTitle: 'UC San Diego',
+      courseTitle: 'Interactivity with JavaScript',
+      schoolTitle: 'University of Michigan',
       link: 'https://www.coursera.org/account/accomplishments/verify/60PW1BTFEMC5',
-      image: '/assets/coursera-images/datastructures.webp'
+      image: '/assets/coursera-images/interactivityjavascript.webp'
+    },
+    {
+      id: 3,
+      courseTitle: 'Interactivity with JavaScript',
+      schoolTitle: 'University of Michigan',
+      link: 'https://www.coursera.org/account/accomplishments/verify/60PW1BTFEMC5',
+      image: '/assets/coursera-images/interactivityjavascript.webp'
     }
   ];
 
@@ -53,8 +60,9 @@ export default function Certifications() {
           </span>
         </div>
         <div className="pt-4">
-          {certificationsItems.map(
-            ({ id, courseTitle, schoolTitle, link, image }) => (
+          {certificationsItems
+            .slice(0, 3)
+            .map(({ id, courseTitle, schoolTitle, link, image }) => (
               <div
                 key={id}
                 className="border-border-line relative border-b py-6"
@@ -70,6 +78,7 @@ export default function Certifications() {
                           alt={`${courseTitle} certificate`}
                           sizes="256px"
                           className="object-contain"
+                          quality={100}
                         />
                       </div>
                     )}
@@ -94,8 +103,7 @@ export default function Certifications() {
                   </div>
                 </div>
               </div>
-            )
-          )}
+            ))}
         </div>
       </div>
     </section>
