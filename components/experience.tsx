@@ -72,7 +72,7 @@ const experienceData: ExperienceItem[] = [
 export default function Experience() {
   return (
     <section>
-      <div className="inline-flex w-full flex-col">
+      <div className="flex w-full flex-col">
         <div className="flex flex-row justify-between">
           <div className="inline-flex flex-col">
             <span className="text-[15px]">Experience</span>
