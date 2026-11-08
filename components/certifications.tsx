@@ -33,7 +33,7 @@ export default function Certifications() {
       image: '/assets/coursera-images/interactivityjavascript.webp'
     },
     {
-      id: 3,
+      id: 4,
       courseTitle: 'Interactivity with JavaScript',
       schoolTitle: 'University of Michigan',
       link: 'https://www.coursera.org/account/accomplishments/verify/60PW1BTFEMC5',
@@ -51,13 +51,15 @@ export default function Certifications() {
               Most of my certification
             </h1>
           </div>
-          <span className="group hover:text-text-highlight inline-flex cursor-pointer items-center gap-0.5 text-[13px] font-medium tracking-[0.1] transition-colors duration-200">
-            VIEW MORE
-            <ChevronRight
-              size={15.5}
-              className="transition-transform duration-200 group-hover:translate-x-1"
-            />
-          </span>
+          <a href="/certifications">
+            <span className="group hover:text-text-highlight inline-flex cursor-pointer items-center gap-0.5 text-[13px] font-medium tracking-[0.1] transition-colors duration-200">
+              VIEW MORE
+              <ChevronRight
+                size={15.5}
+                className="transition-transform duration-200 group-hover:translate-x-1"
+              />
+            </span>
+          </a>
         </div>
         <div className="pt-4">
           {certificationsItems
