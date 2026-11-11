@@ -1,8 +1,13 @@
+'use client';
+
 import { certificationsData } from '@/app/data/certificationsData';
 import { ArrowUpRight, ChevronRight } from 'lucide-react';
 import Image from 'next/image';
+import { useState } from 'react';
 
 export default function Certifications() {
+  const [selectedImage, setSelectedImage] = useState<string | null>(null);
+
   return (
     <section>
       <div className="pt-6">
@@ -35,7 +40,10 @@ export default function Certifications() {
                   {/* Image - Left */}{' '}
                   <div className="relative h-22 w-32 shrink-0 cursor-pointer overflow-hidden rounded-md">
                     {image && (
-                      <div className="relative h-22 w-32 shrink-0 overflow-hidden rounded-md">
+                      <div
+                        className="relative h-22 w-32 shrink-0 overflow-hidden rounded-md"
+                        onClick={() => setSelectedImage(image)}
+                      >
                         <Image
                           src={image}
                           fill
@@ -47,6 +55,26 @@ export default function Certifications() {
                       </div>
                     )}
                   </div>
+                  {selectedImage && (
+                    <div
+                      className="fixed inset-0 z-50 flex items-center justify-center bg-black/40 p-6 backdrop-blur-sm"
+                      onClick={() => setSelectedImage(null)}
+                    >
+                      <div
+                        className="relative"
+                        onClick={(e) => e.stopPropagation()}
+                      >
+                        <Image
+                          src={selectedImage}
+                          alt="Certificate preview"
+                          width={600}
+                          height={464}
+                          className="h-auto max-h-[85vh] w-auto max-w-150 rounded-xl object-contain"
+                          sizes="(max-width: 600px) 90vw, 600px"
+                        />
+                      </div>
+                    </div>
+                  )}
                   {/* Text - Right */}
                   <div className="inline-flex flex-col">
                     <h3 className="text-text-heading text-base font-semibold">
