@@ -1,46 +1,8 @@
+import { certificationsData } from '@/app/data/certificationsData';
 import { ArrowUpRight, ChevronRight } from 'lucide-react';
 import Image from 'next/image';
 
-interface CertificationsItems {
-  id: number;
-  courseTitle: string;
-  schoolTitle: string;
-  link: string;
-  image: string;
-}
-
 export default function Certifications() {
-  const certificationsItems: CertificationsItems[] = [
-    {
-      id: 1,
-      courseTitle: 'Data Structures',
-      schoolTitle: 'UC San Diego',
-      link: 'https://www.coursera.org/account/accomplishments/verify/60PW1BTFEMC5',
-      image: '/assets/coursera-images/datastructures.webp'
-    },
-    {
-      id: 2,
-      courseTitle: 'Programming with JavaScript',
-      schoolTitle: 'Meta',
-      link: 'https://www.coursera.org/account/accomplishments/verify/MCY7Z8DIZE81',
-      image: '/assets/coursera-images/programmingjavascript.webp'
-    },
-    {
-      id: 3,
-      courseTitle: 'Interactivity with JavaScript',
-      schoolTitle: 'University of Michigan',
-      link: 'https://www.coursera.org/account/accomplishments/verify/60PW1BTFEMC5',
-      image: '/assets/coursera-images/interactivityjavascript.webp'
-    },
-    {
-      id: 4,
-      courseTitle: 'Interactivity with JavaScript',
-      schoolTitle: 'University of Michigan',
-      link: 'https://www.coursera.org/account/accomplishments/verify/60PW1BTFEMC5',
-      image: '/assets/coursera-images/interactivityjavascript.webp'
-    }
-  ];
-
   return (
     <section>
       <div className="pt-6">
@@ -62,7 +24,7 @@ export default function Certifications() {
           </a>
         </div>
         <div className="pt-4">
-          {certificationsItems
+          {certificationsData
             .slice(0, 3)
             .map(({ id, courseTitle, schoolTitle, link, image }) => (
               <div
