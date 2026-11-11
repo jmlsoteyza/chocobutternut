@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import { certificationsData } from '../data/certificationsData';
+import { ArrowUpRight } from 'lucide-react';
 
 export default function page() {
   return (
@@ -31,13 +32,15 @@ export default function page() {
               <span className="pt-2 text-sm">{items.schoolTitle}</span>
               <span className="pt-1 text-sm">{items.completed}</span>
               <a
+                className="group text-text-highlight relative inline-flex items-center gap-0.5 self-start pt-4.5 text-[14.5px] transition-colors duration-300"
                 href={items.link}
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label={`View ${items.courseTitle} certificate`}
-                className="text-text-highlight self-start pt-3 text-sm underline-offset-4 hover:underline"
               >
-                View certificate ↗
+                Verify
+                <ArrowUpRight
+                  size={14}
+                  className="transition-transform duration-200 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
+                />
+                <span className="bg-text-highlight absolute right-0 bottom-0 left-0 h-px origin-left scale-x-0 transition-transform duration-300 group-hover:scale-x-100" />
               </a>
             </div>
           </div>
