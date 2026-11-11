@@ -10,13 +10,13 @@ export default function page() {
         These are all the certificates that I accumulate throughout my career
         and schools.
       </p>
-      <div className="grid w-full grid-cols-3 gap-x-4 gap-y-6">
+      <div className="grid w-full grid-cols-3 gap-4">
         {certificationsData.map((items) => (
           <div
-            className="border-border-line flex flex-col rounded-lg border bg-white/[0.03] px-3 py-3.5"
+            className="border-border-line flex flex-col rounded-lg border bg-white/3 px-3 py-3.5"
             key={items.id}
           >
-            <div className="relative aspect-[4/3] w-full shrink-0 overflow-hidden rounded-md bg-white/5">
+            <div className="relative aspect-4/3 w-full shrink-0 overflow-hidden rounded-md bg-white/5">
               <Image
                 src={items.image}
                 alt={items.courseTitle}
