@@ -1,8 +1,13 @@
+'use client';
+
 import Image from 'next/image';
 import { certificationsData } from '../data/certificationsData';
 import { ArrowUpRight } from 'lucide-react';
+import { useState } from 'react';
 
 export default function page() {
+  const [selectedImage, setSelectedImage] = useState<string | null>(null);
+
   return (
     <section className="mx-auto w-full max-w-3xl px-10 pt-16 pb-20">
       <h3 className="text-text-heading pb-4 text-2xl">Certifications</h3>
@@ -16,7 +21,10 @@ export default function page() {
             className="border-border-line flex flex-col rounded-lg border bg-white/3 px-3 py-3.5"
             key={items.id}
           >
-            <div className="relative aspect-4/3 w-full shrink-0 overflow-hidden rounded-md bg-white/5">
+            <div
+              className="relative aspect-4/3 w-full shrink-0 overflow-hidden rounded-md bg-white/5"
+              onClick={() => setSelectedImage(items.image)}
+            >
               <Image
                 src={items.image}
                 alt={items.courseTitle}
@@ -45,6 +53,24 @@ export default function page() {
             </div>
           </div>
         ))}
+        {/* Modal code */}
+        {selectedImage && (
+          <div
+            className="fixed inset-0 z-50 flex items-center justify-center bg-black/40 p-6 backdrop-blur-sm"
+            onClick={() => setSelectedImage(null)}
+          >
+            <div className="relative" onClick={(e) => e.stopPropagation()}>
+              <Image
+                src={selectedImage}
+                alt="Certificate preview"
+                width={600}
+                height={464}
+                className="h-auto max-h-[85vh] w-auto max-w-150 rounded-xl object-contain"
+                sizes="(max-width: 600px) 90vw, 600px"
+              />
+            </div>
+          </div>
+        )}
       </div>
     </section>
   );

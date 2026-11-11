@@ -15,7 +15,7 @@ export default function Navbar() {
   return (
     <nav className="border-border-line bg-background/15 sticky top-0 z-50 w-full border-b backdrop-blur-md">
       <div className="mx-auto flex max-w-3xl items-center justify-between gap-6 px-10 py-3.5">
-        <a href="#home" className="relative h-10 w-10 shrink-0">
+        <a href="/" className="relative h-10 w-10 shrink-0">
           <Image
             className="absolute inset-0 m-auto opacity-100 transition-opacity duration-300 dark:opacity-0"
             src="/darkicon.svg"
