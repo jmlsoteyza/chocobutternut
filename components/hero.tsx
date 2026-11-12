@@ -37,7 +37,7 @@ export default function Hero() {
         </div>
 
         {/* Right text */}
-        <div className="inline-flex flex-col gap-4 pt-4">
+        <div className="inline-flex flex-col gap-2.5 pt-4">
           <div className="flex flex-wrap items-center gap-4">
             <span className="text-text-heading text-2xl font-bold tracking-tight">
               Jom Oteyza
@@ -49,8 +49,8 @@ export default function Hero() {
             </span>
           </div>
 
-          <span className="text-text-navbar pr-8 text-sm italic">
-            "Focus on the craft. Trust the Process."
+          <span className="text-text-navbar text-sm">
+            trust the process, stay in motion.
           </span>
 
           <div className="mt-auto mb-2 flex items-center gap-4">
