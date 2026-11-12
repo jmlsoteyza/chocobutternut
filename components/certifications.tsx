@@ -38,10 +38,10 @@ export default function Certifications() {
               >
                 <div className="flex gap-4">
                   {/* Image - Left */}{' '}
-                  <div className="relative h-22 w-32 shrink-0 cursor-pointer overflow-hidden rounded-md">
+                  <div className="relative h-22 w-32 shrink-0 cursor-pointer overflow-hidden">
                     {image && (
                       <div
-                        className="relative h-22 w-32 shrink-0 overflow-hidden rounded-md"
+                        className="group relative h-22 w-32 shrink-0 overflow-hidden"
                         onClick={() => setSelectedImage(image)}
                       >
                         <Image
@@ -49,7 +49,7 @@ export default function Certifications() {
                           fill
                           alt={`${courseTitle} certificate`}
                           sizes="256px"
-                          className="object-contain"
+                          className="object-contain transition-transform duration-300 ease-out group-hover:scale-103"
                           quality={100}
                         />
                       </div>

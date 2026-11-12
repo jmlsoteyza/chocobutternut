@@ -22,7 +22,7 @@ export default function page() {
             key={items.id}
           >
             <div
-              className="relative aspect-4/3 w-full shrink-0 overflow-hidden rounded-md bg-white/5"
+              className="group relative aspect-4/3 w-full shrink-0 cursor-pointer overflow-hidden rounded-md bg-white/5"
               onClick={() => setSelectedImage(items.image)}
             >
               <Image
@@ -30,7 +30,7 @@ export default function page() {
                 alt={items.courseTitle}
                 fill
                 sizes="(max-width: 768px) 50vw, 300px"
-                className="object-contain"
+                className="object-contain transition-transform duration-300 ease-out group-hover:scale-107"
               />
             </div>
             <div className="inline-flex flex-col">
