@@ -34,7 +34,7 @@ export default function Certifications() {
             .map(({ id, courseTitle, schoolTitle, link, image }) => (
               <div
                 key={id}
-                className="border-border-line relative border-b py-6"
+                className="border-border-line relative border-b py-6 last:border-b-0"
               >
                 <div className="flex gap-4">
                   {/* Image - Left */}{' '}

@@ -3,6 +3,7 @@ import { Geist } from 'next/font/google';
 import './globals.css';
 import Navbar from '@/components/navbar/navbar';
 import { ThemeProvider } from './theme-provider';
+import Footer from '@/components/footer';
 
 const geist = Geist({
   variable: '--font-geist',
@@ -29,6 +30,7 @@ export default function RootLayout({ children }: LayoutProps<'/'>) {
         >
           <Navbar />
           {children}
+          <Footer />
         </ThemeProvider>
       </body>
     </html>

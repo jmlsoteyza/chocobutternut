@@ -8,7 +8,7 @@ import Stacks from '@/components/stacks';
 
 export default function Home() {
   return (
-    <main className="mx-auto flex w-full max-w-3xl flex-col gap-32 px-10 pt-28 pb-20">
+    <main className="mx-auto flex w-full max-w-3xl flex-col gap-32 px-10 pt-28">
       <Hero />
       <Experience />
       <Projects />
