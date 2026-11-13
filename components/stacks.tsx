@@ -1,3 +1,4 @@
+import { ChevronRight } from 'lucide-react';
 import type { IconType } from 'react-icons';
 import { FaJava } from 'react-icons/fa';
 import {
@@ -51,13 +52,24 @@ export default function Stacks() {
   return (
     <section>
       <div>
-        <div className="inline-flex flex-col gap-2 pb-6">
-          <span className="text-[15px]">Tools & Stacks</span>
-          <h1 className="text-text-highlight text-xl font-medium tracking-tight">
-            What I usually use.
-          </h1>
+        <div className="flex flex-row justify-between">
+          <div className="inline-flex flex-col">
+            <span className="text-[15px]">Tools & Stacks</span>
+            <h1 className="text-text-highlight text-xl font-medium tracking-tight">
+              What I use.
+            </h1>
+          </div>
+          <a href="/certifications">
+            <span className="group hover:text-text-highlight inline-flex cursor-pointer items-center gap-0.5 text-[13px] font-medium tracking-[0.1] transition-colors duration-200">
+              VIEW MORE
+              <ChevronRight
+                size={15.5}
+                className="transition-transform duration-200 group-hover:translate-x-1"
+              />
+            </span>
+          </a>
         </div>
-        <div className="flex flex-wrap gap-2 gap-y-2.5">
+        <div className="flex flex-wrap gap-2 gap-y-2.5 pt-6">
           {stackItems.map(({ icon: Icon, name, color }) => (
             <div
               key={name}
