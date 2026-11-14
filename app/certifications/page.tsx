@@ -9,9 +9,9 @@ export default function page() {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
   return (
-    <section className="mx-auto w-full max-w-3xl px-10 pt-16 ">
-      <h3 className="text-text-heading pb-4 text-2xl">Certifications</h3>
-      <p className="pb-12">
+    <section className="mx-auto w-full max-w-3xl px-10 pt-16">
+      <h3 className="text-text-heading pb-4 text-xl">Certifications</h3>
+      <p className="pb-12 text-sm font-medium">
         These are all the certificates that I accumulate throughout my career
         and schools.
       </p>
