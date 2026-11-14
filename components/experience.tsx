@@ -8,6 +8,8 @@ interface ExperienceItem {
   year: string;
   role: string;
   link: string;
+  workType: string;
+  location: string;
   description: string;
   logo: {
     width: number;
@@ -22,7 +24,9 @@ const experienceData: ExperienceItem[] = [
   {
     id: 1,
     company: 'House Of Inasal',
-    year: '2023 - 2024',
+    year: 'Mar 2026 - Feb 2026',
+    workType: 'Remote',
+    location: 'Dubai, United Arab Emirates',
     role: 'Fullstack Engineer',
     link: 'trueroas.com',
     description:
@@ -38,7 +42,9 @@ const experienceData: ExperienceItem[] = [
   {
     id: 2,
     company: 'TrueRoas',
-    year: '2023 - 2024',
+    year: 'Jan 2024 - Mar 2026',
+    workType: 'Remote',
+    location: 'Stockholm, Sweden',
     role: 'Fullstack Engineer',
     link: 'trueroas.com',
     description:
@@ -54,7 +60,9 @@ const experienceData: ExperienceItem[] = [
   {
     id: 3,
     company: 'Anterior',
-    year: '2023 - 2024',
+    year: 'Jan 2024 - Mar 2026',
+    workType: 'Remote',
+    location: 'Manila, Philippines',
     role: 'Frontend Engineer Intern',
     link: 'www.com',
     description:
@@ -90,7 +98,17 @@ export default function Experience() {
         </div>
         <div className="flex flex-col gap-6 pt-6">
           {experienceData.map(
-            ({ id, company, year, role, description, logo, skills }) => (
+            ({
+              id,
+              company,
+              year,
+              role,
+              description,
+              logo,
+              skills,
+              workType,
+              location
+            }) => (
               <div
                 key={id}
                 className="group relative -mx-5 flex cursor-pointer gap-4 overflow-hidden rounded-xl p-5 text-sm transition duration-300 hover:border-white/20 hover:bg-white/[0.04]"
@@ -112,9 +130,16 @@ export default function Experience() {
                           className="transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1"
                         />
                       </div>
-                      <p>{company}</p>
+                      <p className="text-text-highlight pt-0.5 font-medium">
+                        {company}
+                      </p>
+                      <div className="inline-flex flex-wrap items-center gap-2 pt-0.5 text-sm">
+                        <p>{location}</p>
+                        <span className="text-text-small">·</span>
+                        <p>{workType}</p>
+                      </div>
                     </div>
-                    <span className="shrink-0 text-xs">{year}</span>
+                    <span className="shrink-0 text-[13px]">{year}</span>
                   </div>
                   <p className="text-text-primary pt-3 text-[15px] leading-relaxed">
                     {description}
