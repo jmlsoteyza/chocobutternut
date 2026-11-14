@@ -80,10 +80,12 @@ export default function Hero() {
 
       {/* Description */}
       <div className="w-full py-6">
-        <div className="inline-flex flex-col gap-4 pr-6">
-          <p className="text-text-primary pr-4 leading-relaxed tracking-[-0.2px]">
-            Sup, I’m Jom! a{' '}
-            <span className="text-text-highlight">frontend engineer</span> who
+        <div className="inline-flex flex-col pr-6">
+          <p className="text-text-highlight pr-4 text-[15px] leading-relaxed">
+            Sup, I’m jom! 👋🏻
+          </p>
+          <p className="text-text-primary pt-2.5 pr-4 text-[15px] leading-relaxed">
+            <span className="text-text-highlight">A frontend engineer</span> who
             enjoys building great websites and web apps,
             <span className="text-text-highlight">
               {' '}
@@ -98,7 +100,7 @@ export default function Hero() {
             .
           </p>
 
-          <p className="text-text-primary pr-4 leading-relaxed tracking-[-0.2px]">
+          <p className="text-text-primary pt-2.5 pr-4 text-[15px] leading-relaxed">
             As a freelancer, I build interfaces that reflect each client’s
             vision and the needs of their users. I handle{' '}
             <span className="text-text-highlight">both design and code</span>,
@@ -109,7 +111,7 @@ export default function Hero() {
             .
           </p>
 
-          <p className="text-text-primary leading-relaxed tracking-[-0.2px]">
+          <p className="text-text-primary pt-2.5 text-[15px] leading-relaxed">
             In my downtime, I compete in dota2, running, the gym, and trips with
             friends.
           </p>
@@ -118,7 +120,7 @@ export default function Hero() {
           href="#contact"
           className="group text-text-primary hover:text-text-highlight focus-visible:text-text-highlight mt-6 flex w-fit flex-row items-center gap-1 transition-colors duration-300"
         >
-          <span className="relative pb-1">
+          <span className="relative pb-1 text-[15px]">
             Let&apos;s get in touch
             <span className="bg-border-line absolute inset-x-0 bottom-0 h-px" />
             <span className="absolute inset-x-0 bottom-0 h-px origin-left scale-x-0 bg-white transition-transform duration-300 group-hover:scale-x-100 group-focus-visible:scale-x-50" />
