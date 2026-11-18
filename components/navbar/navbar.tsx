@@ -8,12 +8,10 @@ export default function Navbar() {
     { label: 'Projects', link: '#projects' },
     { label: 'Skills', link: '#skills' },
     { label: 'Experience', link: '#experience' },
-    { label: 'Services', link: '#services' }
-
-    // { label: 'Blog', link: '#blog' } soon!
+    { label: 'Writing', link: '/writing' }
   ];
   return (
-    <nav className="border-border-line bg-background/15 sticky top-0 z-50 w-full border-b backdrop-blur-md">
+    <nav className="bg-background/15 sticky top-0 z-50 w-full backdrop-blur-md">
       <div className="mx-auto flex max-w-3xl items-center justify-between gap-6 px-10 py-3.5">
         <a href="/" className="relative h-10 w-10 shrink-0">
           <Image
@@ -32,7 +30,7 @@ export default function Navbar() {
           />
         </a>
 
-        <div className="flex shrink-0 items-center gap-6 px-4 py-2 text-[15px]">
+        <div className="flex shrink-0 items-center gap-6 px-4 py-2 text-[14.5px]">
           {navbarList.map((item) => (
             <a className="text-text-navbar" key={item.label} href={item.link}>
               {item.label}

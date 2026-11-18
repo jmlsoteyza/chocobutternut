@@ -81,20 +81,24 @@ export default function Hero() {
       {/* Description */}
       <div className="w-full py-6">
         <div className="inline-flex flex-col pr-6">
-          <p className="text-text-highlight pr-4 text-[15px] leading-relaxed">
+          <p className="text-text-highlight pr-4 text-[15px] leading-relaxed font-medium">
             Sup, I’m jom! 👋🏻
           </p>
           <p className="text-text-primary pt-2.5 pr-4 text-[15px] leading-relaxed">
-            <span className="text-text-highlight">A frontend engineer</span> who
-            enjoys building great websites and web apps,
-            <span className="text-text-highlight">
+            <span className="text-text-highlight font-medium">
+              A frontend engineer
+            </span>{' '}
+            who enjoys building great websites and web apps,
+            <span className="text-text-highlight font-medium">
               {' '}
               with a care for craftsmanship
             </span>{' '}
             and the quality of my work. I usually focus on{' '}
-            <span className="text-text-highlight">system design</span> first,
-            then{' '}
-            <span className="text-text-highlight">
+            <span className="text-text-highlight font-medium">
+              system design
+            </span>{' '}
+            first, then{' '}
+            <span className="text-text-highlight font-medium">
               translate those architectural decisions into clean code
             </span>
             .
@@ -103,9 +107,11 @@ export default function Hero() {
           <p className="text-text-primary pt-2.5 pr-4 text-[15px] leading-relaxed">
             As a freelancer, I build interfaces that reflect each client’s
             vision and the needs of their users. I handle{' '}
-            <span className="text-text-highlight">both design and code</span>,
-            so{' '}
-            <span className="text-text-highlight">
+            <span className="text-text-highlight font-medium">
+              both design and code
+            </span>
+            , so{' '}
+            <span className="text-text-highlight font-medium">
               what you sign off on is what gets built
             </span>
             .

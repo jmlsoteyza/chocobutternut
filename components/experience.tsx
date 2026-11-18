@@ -1,4 +1,4 @@
-import { ArrowUpRight, ArrowRight, ChevronRight } from 'lucide-react';
+import { ArrowUpRight, ChevronRight } from 'lucide-react';
 
 import Image from 'next/image';
 
