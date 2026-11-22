@@ -1,5 +1,7 @@
+'use client';
 import Image from 'next/image';
 import { ArrowUpRight, ChevronRight } from 'lucide-react';
+import { useState } from 'react';
 
 interface TextIconsItems {
   name: string;
@@ -7,6 +9,8 @@ interface TextIconsItems {
 }
 
 export default function Hero() {
+  const [activeAi, setActiveAi] = useState<number | null>(null);
+
   const texticons: TextIconsItems[] = [
     {
       name: 'Github',
@@ -25,19 +29,19 @@ export default function Hero() {
   const AiIcons = [
     {
       icons: 'assets/logo/openai-legacy-dark.svg',
-      nameAlt: 'openai'
+      nameAlt: 'Open AI'
     },
     {
       icons: 'assets/logo/gemini.svg',
-      nameAlt: 'gemini'
+      nameAlt: 'Gemini'
     },
     {
       icons: 'assets/logo/claude.svg',
-      nameAlt: 'claude'
+      nameAlt: 'Claude'
     },
     {
       icons: 'assets/logo/codex-dark.svg',
-      nameAlt: 'claude'
+      nameAlt: 'Codex'
     }
   ];
 
@@ -127,9 +131,11 @@ export default function Hero() {
               />
               YouTube,
             </span>{' '}
-            <span className="text-text-highlight">certifications, </span>
+            <span className="text-text-highlight cursor-pointer font-medium">
+              certifications,{' '}
+            </span>
             and plenty of{' '}
-            <span className="text-text-highlight cursor-pointer">
+            <span className="text-text-highlight cursor-pointer font-medium">
               broken projects,{' '}
             </span>
             then sharpened it at
@@ -179,7 +185,7 @@ export default function Hero() {
               {AiIcons.map((ai, id) => (
                 <span
                   key={id}
-                  className="-ml-2 rounded-lg bg-[#232729] p-1 shadow-sm transition-all duration-300 ease-out group-hover:ml-1 group-hover:rotate-0 first:ml-0 first:-rotate-6 group-hover:first:ml-0 last:rotate-6 [&:nth-child(2)]:-rotate-2 [&:nth-child(3)]:rotate-2"
+                  className="group/chip relative -ml-2 cursor-pointer rounded-lg bg-[#232729] p-1 shadow-sm transition-all duration-300 ease-out group-hover:ml-1 group-hover:rotate-0 first:ml-0 first:-rotate-6 group-hover:first:ml-0 last:rotate-6 [&:nth-child(2)]:-rotate-2 [&:nth-child(3)]:rotate-2"
                 >
                   <Image
                     src={ai.icons}
@@ -188,6 +194,9 @@ export default function Hero() {
                     alt={ai.nameAlt}
                     className="block"
                   />
+                  <span className="pointer-events-none absolute bottom-full left-1/2 z-10 mb-2 -translate-x-1/2 translate-y-1 rounded-md border-2 border-white/40 bg-[#111] px-3 py-1.5 text-[12px] leading-none font-semibold whitespace-nowrap text-white opacity-0 transition-all duration-150 group-hover/chip:translate-y-0 group-hover/chip:opacity-100 group-hover/chip:delay-300">
+                    {ai.nameAlt}
+                  </span>
                 </span>
               ))}
             </span>{' '}
