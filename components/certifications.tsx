@@ -14,7 +14,7 @@ export default function Certifications() {
         <div className="flex flex-row justify-between">
           <div className="inline-flex flex-col">
             <span className="text-[15px]">Certifications</span>
-            <h1 className="text-text-highlight text-xl font-medium tracking-tight">
+            <h1 className="text-text-highlight text-[18px] font-medium tracking-tight">
               Most of my certification
             </h1>
           </div>

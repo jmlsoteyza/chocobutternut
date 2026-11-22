@@ -84,7 +84,7 @@ export default function Experience() {
         <div className="flex flex-row justify-between">
           <div className="inline-flex flex-col">
             <span className="text-[15px]">Experience</span>
-            <h1 className="text-text-highlight text-xl font-medium tracking-tight">
+            <h1 className="text-text-highlight text-[18px] font-medium tracking-tight">
               My work history.
             </h1>
           </div>
@@ -141,7 +141,7 @@ export default function Experience() {
                     </div>
                     <span className="shrink-0 text-[13px]">{year}</span>
                   </div>
-                  <p className="text-text-primary pt-3 text-[15px] leading-relaxed">
+                  <p className="text-text-primary pt-3 text-[14.5px] leading-relaxed">
                     {description}
                   </p>
                   <div className="flex flex-row gap-2 pt-2 text-xs">

@@ -42,7 +42,7 @@ export default function Projects() {
       <div className="flex flex-row justify-between">
         <div className="inline-flex flex-col">
           <span className="text-[15px]">Projects</span>
-          <h1 className="text-text-highlight text-xl font-medium tracking-tight">
+          <h1 className="text-text-highlight text-[18px] font-medium tracking-tight">
             What I built.
           </h1>
         </div>

@@ -113,10 +113,10 @@ export default function Hero() {
                 alt=""
                 className="mr-[3.5px] inline-block align-[-3px]"
               />
-              Richmindale
-            </span>
-            , and I was hooked the first time I built something with my own
-            hands and saw it work. I kept learning through{' '}
+              Richmindale,
+            </span>{' '}
+            and I was hooked the first time I built something with my own hands
+            and saw it work. I kept learning through{' '}
             <span className="text-text-highlight cursor-pointer font-medium whitespace-nowrap">
               <Image
                 src="/assets/logo/youtube.svg"
@@ -181,12 +181,12 @@ export default function Hero() {
               {AiIcons.map((ai, id) => (
                 <span
                   key={id}
-                  className="group/chip relative -ml-2 cursor-pointer rounded-lg bg-[#232729] p-1 shadow-sm transition-all duration-300 ease-out group-hover:ml-1 group-hover:rotate-0 first:ml-0 first:-rotate-6 group-hover:first:ml-0 last:rotate-6 [&:nth-child(2)]:-rotate-2 [&:nth-child(3)]:rotate-2"
+                  className="group/chip relative -ml-2 cursor-pointer rounded-lg bg-[#232729] px-1.5 py-1.5 shadow-sm transition-all duration-300 ease-out group-hover:ml-1 group-hover:rotate-0 first:ml-0 first:-rotate-6 group-hover:first:ml-0 last:rotate-6 [&:nth-child(2)]:-rotate-2 [&:nth-child(3)]:rotate-2"
                 >
                   <Image
                     src={ai.icons}
-                    width={16.5}
-                    height={16.5}
+                    width={16}
+                    height={16}
                     alt={ai.nameAlt}
                     className="block"
                   />
