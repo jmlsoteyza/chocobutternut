@@ -199,7 +199,7 @@ export default function Hero() {
             to speed up my workflow, but I still craft every detail with my own
             hands.
           </p>
-          <p className="text-text-primary pt-2.5 pr-4 text-[14.5px] leading-[1.6] font-medium">
+          <p className="text-text-primary pt-2.5 pr-4 text-[14.5px] leading-[1.6]">
             Off the clock, you’ll find me competing in dota 2, running, at the
             gym, or on a trip with friends.
           </p>
