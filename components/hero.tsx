@@ -103,11 +103,11 @@ export default function Hero() {
           <p className="text-text-highlight pr-4 text-[14.5px] leading-relaxed font-medium">
             Sup, I’m jom! 👋🏻
           </p>
-          <p className="text-text-primary pt-2.5 pr-4 text-[14.5px] leading-[1.6] font-medium">
+          <p className="text-text-primary pt-2.5 pr-4 text-[14.5px] leading-[1.6]">
             I wrote my first lines of code in senior high at{' '}
-            <span className="text-text-highlight ml-0.5 cursor-pointer whitespace-nowrap">
+            <span className="text-text-highlight ml-0.5 cursor-pointer font-medium whitespace-nowrap">
               <Image
-                src="/richmindale.svg"
+                src="/assets/logo/richmindale.svg"
                 width={18}
                 height={18}
                 alt=""
@@ -117,9 +117,9 @@ export default function Hero() {
             </span>
             , and I was hooked the first time I built something with my own
             hands and saw it work. I kept learning through{' '}
-            <span className="text-text-highlight cursor-pointer whitespace-nowrap">
+            <span className="text-text-highlight cursor-pointer font-medium whitespace-nowrap">
               <Image
-                src="/youtube.svg"
+                src="/assets/logo/youtube.svg"
                 width={18}
                 height={18}
                 alt=""
@@ -133,7 +133,7 @@ export default function Hero() {
               broken projects,{' '}
             </span>
             then sharpened it at
-            <span className="text-text-highlight ml-1 cursor-pointer whitespace-nowrap">
+            <span className="text-text-highlight ml-1 cursor-pointer font-medium whitespace-nowrap">
               <Image
                 src="/mapua.webp"
                 width={18}
@@ -145,9 +145,9 @@ export default function Hero() {
             </span>{' '}
           </p>
 
-          <p className="text-text-primary pt-2.5 pr-4 text-[14.5px] leading-[1.6] font-medium">
+          <p className="text-text-primary pt-2.5 pr-4 text-[14.5px] leading-[1.6]">
             My first real job was at{' '}
-            <span className="text-text-highlight ml-0.5 cursor-pointer whitespace-nowrap">
+            <span className="text-text-highlight ml-0.5 cursor-pointer font-medium whitespace-nowrap">
               <Image
                 src="/reroas_logo.svg"
                 width={16.5}
@@ -158,19 +158,19 @@ export default function Hero() {
               TrueRoas,
             </span>{' '}
             where I was mentored as a junior,{' '}
-            <span className="text-text-highlight cursor-pointer">
+            <span className="text-text-highlight cursor-pointer font-medium">
               shipped features
             </span>{' '}
             and fixed bugs for real users, and learned to write code other
             developers could review and build on.
           </p>
 
-          <p className="text-text-primary pt-2.5 pr-4 text-[14.5px] leading-[1.6] font-medium">
+          <p className="text-text-primary pt-2.5 pr-4 text-[14.5px] leading-[1.6]">
             Now I’m a{' '}
-            <span className="cursor-pointer text-mist-500 underline">
+            <span className="cursor-pointer font-medium text-mist-500 underline">
               freelance
             </span>{' '}
-            <span className="text-text-highlight cursor-pointer">
+            <span className="text-text-highlight cursor-pointer font-medium">
               frontend engineer,
             </span>{' '}
             building websites and web apps with React, Next.js, and Supabase. I
@@ -179,7 +179,7 @@ export default function Hero() {
               {AiIcons.map((ai, id) => (
                 <span
                   key={id}
-                  className="-ml-2 rounded-lg bg-[#232729] p-1 shadow-sm transition-all duration-300 ease-out group-hover:ml-1 group-hover:rotate-0 first:ml-0 first:-rotate-6 group-hover:first:ml-0 last:rotate-6"
+                  className="-ml-2 rounded-lg bg-[#232729] p-1 shadow-sm transition-all duration-300 ease-out group-hover:ml-1 group-hover:rotate-0 first:ml-0 first:-rotate-6 group-hover:first:ml-0 last:rotate-6 [&:nth-child(2)]:-rotate-2 [&:nth-child(3)]:rotate-2"
                 >
                   <Image
                     src={ai.icons}
