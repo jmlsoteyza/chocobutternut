@@ -1,7 +1,5 @@
-'use client';
 import Image from 'next/image';
 import { ArrowUpRight, ChevronRight } from 'lucide-react';
-import { useState } from 'react';
 
 interface TextIconsItems {
   name: string;
@@ -9,8 +7,6 @@ interface TextIconsItems {
 }
 
 export default function Hero() {
-  const [activeAi, setActiveAi] = useState<number | null>(null);
-
   const texticons: TextIconsItems[] = [
     {
       name: 'Github',
