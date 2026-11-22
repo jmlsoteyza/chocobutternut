@@ -22,6 +22,25 @@ export default function Hero() {
     }
   ];
 
+  const AiIcons = [
+    {
+      icons: 'assets/logo/openai-legacy-dark.svg',
+      nameAlt: 'openai'
+    },
+    {
+      icons: 'assets/logo/gemini.svg',
+      nameAlt: 'gemini'
+    },
+    {
+      icons: 'assets/logo/claude.svg',
+      nameAlt: 'claude'
+    },
+    {
+      icons: 'assets/logo/codex-dark.svg',
+      nameAlt: 'claude'
+    }
+  ];
+
   return (
     <section className="w-full">
       <div className="flex flex-row gap-12">
@@ -81,45 +100,103 @@ export default function Hero() {
       {/* Description */}
       <div className="w-full py-6">
         <div className="inline-flex flex-col pr-6">
-          <p className="text-text-highlight pr-4 text-[15px] leading-relaxed font-medium">
+          <p className="text-text-highlight pr-4 text-[14.5px] leading-relaxed font-medium">
             Sup, I’m jom! 👋🏻
           </p>
-          <p className="text-text-primary pt-2.5 pr-4 text-[15px] leading-relaxed">
-            <span className="text-text-highlight font-medium">
-              A frontend engineer
-            </span>{' '}
-            who enjoys building great websites and web apps,
-            <span className="text-text-highlight font-medium">
-              {' '}
-              with a care for craftsmanship
-            </span>{' '}
-            and the quality of my work. I usually focus on{' '}
-            <span className="text-text-highlight font-medium">
-              system design
-            </span>{' '}
-            first, then{' '}
-            <span className="text-text-highlight font-medium">
-              translate those architectural decisions into clean code
+          <p className="text-text-primary pt-2.5 pr-4 text-[14.5px] leading-[1.6] font-medium">
+            I wrote my first lines of code in senior high at{' '}
+            <span className="text-text-highlight ml-0.5 cursor-pointer whitespace-nowrap">
+              <Image
+                src="/richmindale.svg"
+                width={18}
+                height={18}
+                alt=""
+                className="mr-[3.5px] inline-block align-[-3px]"
+              />
+              Richmindale
             </span>
-            .
+            , and I was hooked the first time I built something with my own
+            hands and saw it work. I kept learning through{' '}
+            <span className="text-text-highlight cursor-pointer whitespace-nowrap">
+              <Image
+                src="/youtube.svg"
+                width={18}
+                height={18}
+                alt=""
+                className="mr-[3.5px] inline-block align-[-3px]"
+              />
+              YouTube,
+            </span>{' '}
+            <span className="text-text-highlight">certifications, </span>
+            and plenty of{' '}
+            <span className="text-text-highlight cursor-pointer">
+              broken projects,{' '}
+            </span>
+            then sharpened it at
+            <span className="text-text-highlight ml-1 cursor-pointer whitespace-nowrap">
+              <Image
+                src="/mapua.webp"
+                width={18}
+                height={18}
+                alt=""
+                className="mr-[3.5px] inline-block align-[-3px]"
+              />
+              Mapúa University.
+            </span>{' '}
           </p>
 
-          <p className="text-text-primary pt-2.5 pr-4 text-[15px] leading-relaxed">
-            As a freelancer, I build interfaces that reflect each client’s
-            vision and the needs of their users. I handle{' '}
-            <span className="text-text-highlight font-medium">
-              both design and code
-            </span>
-            , so{' '}
-            <span className="text-text-highlight font-medium">
-              what you sign off on is what gets built
-            </span>
-            .
+          <p className="text-text-primary pt-2.5 pr-4 text-[14.5px] leading-[1.6] font-medium">
+            My first real job was at{' '}
+            <span className="text-text-highlight ml-0.5 cursor-pointer whitespace-nowrap">
+              <Image
+                src="/reroas_logo.svg"
+                width={16.5}
+                height={16.5}
+                alt=""
+                className="mr-[3.5px] inline-block align-[-3px]"
+              />
+              TrueRoas,
+            </span>{' '}
+            where I was mentored as a junior,{' '}
+            <span className="text-text-highlight cursor-pointer">
+              shipped features
+            </span>{' '}
+            and fixed bugs for real users, and learned to write code other
+            developers could review and build on.
           </p>
 
-          <p className="text-text-primary pt-2.5 text-[15px] leading-relaxed">
-            In my downtime, I compete in dota2, running, the gym, and trips with
-            friends.
+          <p className="text-text-primary pt-2.5 pr-4 text-[14.5px] leading-[1.6] font-medium">
+            Now I’m a{' '}
+            <span className="cursor-pointer text-mist-500 underline">
+              freelance
+            </span>{' '}
+            <span className="text-text-highlight cursor-pointer">
+              frontend engineer,
+            </span>{' '}
+            building websites and web apps with React, Next.js, and Supabase. I
+            use AI{' '}
+            <span className="group inline-flex flex-row align-middle">
+              {AiIcons.map((ai, id) => (
+                <span
+                  key={id}
+                  className="-ml-2 rounded-lg bg-[#232729] p-1 shadow-sm transition-all duration-300 ease-out group-hover:ml-1 group-hover:rotate-0 first:ml-0 first:-rotate-6 group-hover:first:ml-0 last:rotate-6"
+                >
+                  <Image
+                    src={ai.icons}
+                    width={16.5}
+                    height={16.5}
+                    alt={ai.nameAlt}
+                    className="block"
+                  />
+                </span>
+              ))}
+            </span>{' '}
+            to speed up my workflow, but I still craft every detail with my own
+            hands.
+          </p>
+          <p className="text-text-primary pt-2.5 pr-4 text-[14.5px] leading-[1.6] font-medium">
+            Off the clock, you’ll find me competing in dota 2, running, at the
+            gym, or on a trip with friends.
           </p>
         </div>
         <a
