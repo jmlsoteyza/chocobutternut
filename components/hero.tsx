@@ -190,7 +190,7 @@ export default function Hero() {
                     alt={ai.nameAlt}
                     className="block"
                   />
-                  <span className="pointer-events-none absolute bottom-full left-1/2 z-10 mb-2 -translate-x-1/2 translate-y-1 rounded-md border-2 border-white/40 bg-[#111] px-3 py-1.5 text-[12px] leading-none font-semibold whitespace-nowrap text-white opacity-0 transition-all duration-150 group-hover/chip:translate-y-0 group-hover/chip:opacity-100 group-hover/chip:delay-300">
+                  <span className="pointer-events-none absolute bottom-full left-1/2 z-10 mb-2 -translate-x-1/2 translate-y-1 rounded-md border-2 border-white/40 bg-[#111] px-3 py-1.5 text-[12px] leading-none font-semibold whitespace-nowrap text-white opacity-0 transition-all duration-150 group-hover/chip:translate-y-0 group-hover/chip:opacity-100 group-hover/chip:delay-150">
                     {ai.nameAlt}
                   </span>
                 </span>
