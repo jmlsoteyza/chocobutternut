@@ -58,14 +58,9 @@ export default function Hero() {
 
         {/* Right text */}
         <div className="inline-flex flex-col gap-2.5 pt-4">
-          <div className="flex flex-wrap items-center gap-4">
+          <div>
             <span className="text-text-heading text-2xl font-bold tracking-tight">
               Jom Oteyza
-            </span>
-
-            <span className="inline-flex w-fit items-center gap-2 rounded-full border border-blue-500/20 bg-blue-500/5 px-3 py-1 text-xs text-blue-400">
-              <span className="h-1.5 w-1.5 rounded-full bg-blue-400" />
-              Available
             </span>
           </div>
 
