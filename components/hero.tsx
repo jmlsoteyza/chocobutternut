@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import { ArrowUpRight, ChevronRight } from 'lucide-react';
+import HoverImageWord from './hero/hoverImage';
 
 interface TextIconsItems {
   name: string;
@@ -100,24 +101,20 @@ export default function Hero() {
       {/* Description */}
       <div className="w-full py-6">
         <div className="inline-flex flex-col pr-6">
-          <p className="text-text-highlight pr-4 text-[14.5px] leading-relaxed font-medium">
+          <p className="text-text-highlight pr-4 text-[15px] leading-relaxed font-semibold">
             Sup, I’m jom! 👋🏻
           </p>
-          <p className="text-text-primary pt-2.5 pr-4 text-[14.5px] leading-[1.6]">
+          <p className="text-text-primary pt-2.5 pr-4 text-[15px] leading-[1.6]">
             I wrote my first lines of code in senior high at{' '}
-            <span className="text-text-highlight ml-0.5 cursor-pointer font-medium whitespace-nowrap">
-              <Image
-                src="/assets/logo/richmindale.svg"
-                width={18}
-                height={18}
-                alt=""
-                className="mr-[3.5px] inline-block align-[-3px]"
-              />
-              Richmindale,
-            </span>{' '}
+            <HoverImageWord
+              isStyle={true}
+              label="Richmindale,"
+              icon="/assets/logo/richmindale.svg"
+              previewSrc="/assets/coursera-images/datastructures.webp"
+            />{' '}
             and I was hooked the first time I built something with my own hands
-            and saw it work. I kept learning through{' '}
-            <span className="text-text-highlight cursor-pointer font-medium whitespace-nowrap">
+            and saw it work. I kept learning through
+            <span className="ml-1 whitespace-nowrap">
               <Image
                 src="/assets/logo/youtube.svg"
                 width={18}
@@ -127,54 +124,53 @@ export default function Hero() {
               />
               YouTube,
             </span>{' '}
-            <span className="text-text-highlight cursor-pointer font-medium">
-              certifications,{' '}
-            </span>
+            <HoverImageWord
+              isStyle={true}
+              label="certifications,"
+              icon=""
+              previewSrc="/assets/coursera-images/datastructures.webp"
+            />{' '}
             and plenty of{' '}
-            <span className="text-text-highlight cursor-pointer font-medium">
-              broken projects,{' '}
-            </span>
+            <HoverImageWord
+              label="broken projects,"
+              previewSrc="/assets/coursera-images/datastructures.webp"
+            />{' '}
             then sharpened it at
-            <span className="text-text-highlight ml-1 cursor-pointer font-medium whitespace-nowrap">
-              <Image
-                src="/mapua.webp"
-                width={18}
-                height={18}
-                alt=""
-                className="mr-[3.5px] inline-block align-[-3px]"
-              />
-              Mapúa University.
-            </span>{' '}
+            <HoverImageWord
+              label="Mapúa University"
+              icon="/mapua.webp"
+              previewSrc="/assets/coursera-images/datastructures.webp"
+              isStyle={false}
+            />
           </p>
 
-          <p className="text-text-primary pt-2.5 pr-4 text-[14.5px] leading-[1.6]">
+          <p className="text-text-primary pt-2.5 pr-4 text-[15px] leading-[1.6]">
             My first real job was at{' '}
-            <span className="text-text-highlight ml-0.5 cursor-pointer font-medium whitespace-nowrap">
-              <Image
-                src="/reroas_logo.svg"
-                width={16.5}
-                height={16.5}
-                alt=""
-                className="mr-[3.5px] inline-block align-[-3px]"
-              />
-              TrueRoas,
-            </span>{' '}
+            <HoverImageWord
+              label="TrueRoas,"
+              icon="/reroas_logo.svg"
+              previewSrc="/assets/coursera-images/datastructures.webp"
+              isStyle={true}
+            />{' '}
             where I was mentored as a junior,{' '}
-            <span className="text-text-highlight cursor-pointer font-medium">
-              shipped features
-            </span>{' '}
+            <HoverImageWord
+              label="shipped features"
+              previewSrc="/assets/coursera-images/datastructures.webp"
+            />{' '}
             and fixed bugs for real users, and learned to write code other
             developers could review and build on.
           </p>
 
-          <p className="text-text-primary pt-2.5 pr-4 text-[14.5px] leading-[1.6]">
+          <p className="text-text-primary pt-2.5 pr-4 text-[15px] leading-[1.6]">
             Now I’m a{' '}
-            <span className="cursor-pointer font-medium text-mist-500 underline">
+            <span className="hover:text-text-highlight cursor-pointer font-medium underline">
               freelance
             </span>{' '}
-            <span className="text-text-highlight cursor-pointer font-medium">
-              frontend engineer,
-            </span>{' '}
+            <HoverImageWord
+              label="frontend engineer"
+              previewSrc="/assets/coursera-images/datastructures.webp"
+              customDesign={true}
+            />{' '}
             building websites and web apps with React, Next.js, and Supabase. I
             use AI{' '}
             <span className="group inline-flex flex-row align-middle">
@@ -199,7 +195,7 @@ export default function Hero() {
             to speed up my workflow, but I still craft every detail with my own
             hands.
           </p>
-          <p className="text-text-primary pt-2.5 pr-4 text-[14.5px] leading-[1.6]">
+          <p className="text-text-primary pt-2.5 pr-4 text-[15px] leading-[1.6]">
             Off the clock, you’ll find me competing in dota 2, running, at the
             gym, or on a trip with friends.
           </p>
