@@ -195,18 +195,41 @@ export default function Hero() {
             gym, or on a trip with friends.
           </p>
         </div>
+        {/* <a
+          href="mailto:your-email@example.com"
+          className="group mt-6 inline-flex items-center gap-2 rounded-lg bg-white px-3.5 py-2.5 text-[15px] font-medium text-[#111]"
+        >
+          <span>Let's get in touch!</span>
+
+          <ArrowUpRight
+            size={18}
+            className="transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
+          />
+        </a> */}
+        {/* <a
+          href="mailto:your-email@example.com"
+          className="group mt-6 inline-flex items-center gap-2 rounded-lg border border-white/20 bg-[#111] px-3.5 py-2.5 text-[15px] text-[#fff]"
+        >
+          <span>Let's get in touch!</span>
+
+          <ArrowUpRight
+            size={18}
+            className="transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
+          />
+        </a> */}
         <a
           href="#contact"
-          className="group text-text-primary hover:text-text-highlight focus-visible:text-text-highlight mt-6 flex w-fit flex-row items-center gap-1 transition-colors duration-300"
+          className="group text-text-primary hover:text-text-highlight focus-visible:text-text-highlight mt-6 flex w-fit flex-row items-center gap-1 transition-colors duration-300 motion-reduce:transition-none"
         >
-          <span className="relative pb-1 text-[15px]">
-            Let&apos;s get in touch
+          <span className="text-text-highlight relative pb-0.5 text-[15px] font-medium tracking-tight uppercase">
+            Let&rsquo;s get in touch
             <span className="bg-border-line absolute inset-x-0 bottom-0 h-px" />
-            <span className="absolute inset-x-0 bottom-0 h-px origin-left scale-x-0 bg-white transition-transform duration-300 group-hover:scale-x-100 group-focus-visible:scale-x-50" />
+            <span className="absolute inset-x-0 bottom-0 h-px origin-left scale-x-[0.4] bg-white transition-transform duration-300 group-hover:scale-x-100 group-focus-visible:scale-x-50 motion-reduce:transition-none" />
           </span>
           <ChevronRight
+            strokeWidth={2}
             size={19}
-            className="transition-transform duration-300 group-hover:translate-x-1 group-focus-visible:translate-x-1"
+            className="mb-1 transition-transform duration-300 group-hover:translate-x-1 group-focus-visible:translate-x-1 motion-reduce:transition-none"
           />
         </a>
       </div>

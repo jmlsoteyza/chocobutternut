@@ -19,7 +19,7 @@ export default function RootLayout({ children }: LayoutProps<'/'>) {
   return (
     <html
       lang="en"
-      className={` ${geist.variable} h-full antialiased`}
+      className={` ${geist.variable} h-full antialiased motion-safe:scroll-smooth`}
       suppressHydrationWarning
     >
       <body className="flex min-h-full flex-col">
